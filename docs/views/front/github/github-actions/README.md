@@ -95,4 +95,8 @@ jobs:
 
 2. 修改首页 README.md 文件中的 heroText 字段为 技术文档合集 123，然后将代码 push 到远程仓库的 master 分支
 3. push 完成后打开 github 中的项目，点击 actions，然后会发现工作流中有工作流正在运行，可以点击进去看具体的每一步
+
+![home](/assets/img/githubActions/5.png 'home')
+![home](/assets/img/githubActions/6.png 'home')
+
 4. 等待工作流完成后，打开项目发现首页被修改了
