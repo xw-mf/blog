@@ -31,11 +31,10 @@ jobs:
       - name: build app
         run: npm run docs:build
       - name: copy dist file with scp
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.REMOTE_ACCESS_TOKEN }}
-          ARGS: "-avzr --delete"
-          SOURCE: "docs/.vuepress/dist"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASS }}
+          source: 'docs/'
+          target: '/usr/local/nginx/html/blog'
