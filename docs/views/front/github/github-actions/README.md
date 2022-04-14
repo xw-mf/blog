@@ -100,3 +100,5 @@ jobs:
 ![home](/assets/img/githubActions/6.png 'home')
 
 4. 等待工作流完成后，打开项目发现首页被修改了
+
+![home](/assets/img/githubActions/7.png 'home')
