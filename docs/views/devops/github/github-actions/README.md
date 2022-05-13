@@ -1,3 +1,12 @@
+---
+title: Github actions 实现持续集成
+date: 2022-04-12
+categories:
+  - devops
+tags:
+  - CI/CD
+---
+
 # Github actions 实现持续集成
 
 github actions 支持 push 驱动，会启动一个小虚拟机，帮助我们跑 build 和 scp 的过程
